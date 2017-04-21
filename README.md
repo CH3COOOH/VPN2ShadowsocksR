@@ -1,2 +1,2 @@
 # VPN2ShadowsocksR
-![Process](/process.jpg)
+![Process](/vpn2ssr.jpg)
