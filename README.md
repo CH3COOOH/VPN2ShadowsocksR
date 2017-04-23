@@ -27,27 +27,33 @@ latest update: 2017.04.23
 ###  Config of IPSec
   If you install IPSec via "one-key-ikev2.sh", DON'T EDIT ITS CONFIG FILES. The IOS device must install "ca.cert.pem" in path ~/my_key. The process is: make a download link of your "ca.cert.pem" by means of email, cloud service, HTTP server, etc. On IOS device, click the link and a message box would guide you to finish the installation.
   Edit your accounts. The config file is in /usr/local/etc/ipsec.secrets. Here is an example:
-====================
-: RSA server.pems
-: PSK "whateverYouLike"
-: XAUTH "whateverYouLike2"
-user1 : EAP "psw1"
-user2 : EAP "psw2"
-====================
-  After that, launch the IPSec server:
+
+`: RSA server.pems`
+
+`: PSK "whateverYouLike"`
+
+`: XAUTH "whateverYouLike2"`
+
+`user1 : EAP "psw1"`
+
+`user2 : EAP "psw2"`
+
+After that, launch the IPSec server:
 
 `sudo ipsec restart`
 
-  Then:
+Then:
   
 `sudo ipsec statusall`
 
-  You would see lots of items. We just need this:
-==================== 
-  Listening IP addresses:
-  <IP1>
-  <IP2>
-====================
+You would see lots of items. We just need this:
+
+  `Listening IP addresses:`
+  
+  `<IP1>`
+  
+  `<IP2>`
+
   One of these 2 IPs is your VPS's IP in public network, while we need another :)
 
 ###  Config on IOS devices
