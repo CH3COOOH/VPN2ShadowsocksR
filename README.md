@@ -11,6 +11,7 @@ latest update: 2017.04.23
   * SSR(run as client)
   * Polipo(HTTP Proxy)
   * IPSec(bash "one-key-ikev2.sh". This shell is not written by me, process and illustration can be found in author's blog: https://quericy.me/blog/699)
+
 [1] Use just 1 VPS is OK while it would raise the risk of being detected.
 ###  Config of Polipo
   On the "bridge", launch SSR client(the command also can be found in SSR Wiki: https://github.com/breakwa11/shadowsocks-rss/wiki) to access your server. Then be sure that your Polipo's config file have these(maybe in /etc/polipo/conf):
