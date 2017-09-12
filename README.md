@@ -2,7 +2,7 @@
 ![Process](/vpn2ssr.jpg)
 latest update: 2017.04.23
 ## Why
-  As we know, there isn't an appropriate SSR client on IOS devices(current SSR clients such as Wingy are lack of protocols, especially the protocol "auth_aes128_md5" which [@breakwa11](https://github.com/breakwa11) recommended. However, VPN with IKEv2 protocol is avliable. Thus an idea came out that we can access SSR server via IKEv2.
+  As we know, there isn't an appropriate SSR client on IOS devices~~(current SSR clients such as Wingy are lack of protocols, especially the protocol "auth_aes128_md5" which [@breakwa11](https://github.com/breakwa11) recommended)~~(and now all of those clients are unavailable in some areas). However, VPN with IKEv2 protocol is avliable. Thus an idea came out that we can access SSR server via IKEv2.
 ## What should you do
   If you want to access SSR on an IOS devices via VPN, you need to:
 ### First
